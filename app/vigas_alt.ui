@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>871</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>861</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_viga_retangular">
+     <attribute name="title">
+      <string>Seção Retangular</string>
+     </attribute>
+     <widget class="QStackedWidget" name="stacked_viga_modelo_armacao">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>39</y>
+        <width>551</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_viga_armacao_dupla">
+       <widget class="QGroupBox" name="group_viga_armacao_dupla_dimensoes">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>251</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Dimensões</string>
+        </property>
+        <widget class="QLineEdit" name="ledit_viga_armacao_dupla_lagura">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>30</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_dupla_altura">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>60</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_dupla_altura_util">
+         <property name="geometry">
+          <rect>
+           <x>131</x>
+           <y>90</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_dupla_largura">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Largura - bw [cm]</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_dupla_altura">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Altura - h [cm]</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_dupla_altura_util">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>90</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Altura Útil - d [cm]</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="group_viga_armacao_dupla_dominio">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>150</y>
+           <width>260</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Projeção de Domínio</string>
+         </property>
+         <widget class="QRadioButton" name="radio_viga_dominio_3">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>20</y>
+            <width>82</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Domínio 3</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radio_viga_dominio_2">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>82</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Domínio 2</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_linha_neutra">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>50</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Linha Neutra ξ </string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_linha_neutra">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>50</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0.450</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_d_limite">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>80</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>d limite [m]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_d_limite">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>80</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_x_limite">
+          <property name="geometry">
+           <rect>
+            <x>131</x>
+            <y>110</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_armacao_dupla_x_limite">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>110</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>X-limite [m]</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_dupla_d_linha">
+         <property name="geometry">
+          <rect>
+           <x>19</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string> d' [cm]</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_dupla_d_linha">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>120</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="group_viga_armacao_dupla_secao">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>0</y>
+          <width>261</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Seção</string>
+        </property>
+        <widget class="QLabel" name="label_viga_armacao_dupla_secao">
+         <property name="geometry">
+          <rect>
+           <x>71</x>
+           <y>6</y>
+           <width>110</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>navier_viga_dupla.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="group_viga_armadura_longitudinal">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>150</y>
+          <width>261</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Armadura Longitudinal</string>
+        </property>
+        <widget class="QLabel" name="label_viga_momento_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Momento2 [KN.m]</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_momento_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>50</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="group_viga_areas_aco">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>260</width>
+           <height>231</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Áreas de Aço</string>
+         </property>
+         <widget class="QLineEdit" name="ledit_viga_as_compressao">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>20</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_as_compressao">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>18</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As Compressão [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_area_sobre_apoio">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>78</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Asobre-apoio [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_area_sobre_apoio">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>80</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_as_pele">
+          <property name="geometry">
+           <rect>
+            <x>149</x>
+            <y>108</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_as_pele">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>108</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.pele [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_as_max">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>170</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.máx [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_as_max">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>170</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_as_tracao">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>50</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_as_tracao">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>48</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As Tração [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_as_min">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>200</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.mín [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_as_min">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>200</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_as_total">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>140</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.total [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_as_total">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>140</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_momento_limite">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_momento_limite">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>131</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Momento-limite [KN.m]</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_viga_armacao_simples">
+       <widget class="QGroupBox" name="group_viga_armacao_simples_dimensoes">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>251</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Dimensões</string>
+        </property>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_largura">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>30</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_altura">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>60</y>
+           <width>101</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_altura_util">
+         <property name="geometry">
+          <rect>
+           <x>131</x>
+           <y>90</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_largura">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Base - bw [cm]</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_altura">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Altura - h [cm]</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_altura_util">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Altura Útil - d [cm]</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_d_linha">
+         <property name="geometry">
+          <rect>
+           <x>19</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string> d' [cm] </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_d_linha">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>120</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="group_viga_armacao_simples_secao">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>340</y>
+          <width>251</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Seção</string>
+        </property>
+        <widget class="QLabel" name="label_viga_armacao_simples_secao">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>6</y>
+           <width>111</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>secao_viga.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="group_viga_armacao_simples_armadura_longitudinal">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>2</y>
+          <width>251</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Armadura Longitudinal</string>
+        </property>
+        <widget class="QLabel" name="label_viga_armacao_simples_md">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Md [KN.m]</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_md">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>20</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_kmd">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Kmd</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_kmd">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>80</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_kx">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Kx</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_kx">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>110</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_kz">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>140</y>
+           <width>91</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Kz</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_kz">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>140</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="group_viga_armacao_simples_areas_aco">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>170</y>
+           <width>260</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Áreas de Aço</string>
+         </property>
+         <widget class="QLineEdit" name="ledit_viga_armacao_simples_as">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>30</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_armacao_simples_as">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_armacao_simples_area_sobre_apoio">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Asobre-apoio [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_armacao_simples_area_sobre_apoio">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>60</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_armacao_simples_as_pele">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>90</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_armacao_simples_as_pele">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.pele [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_armacao_simples_as_max">
+          <property name="geometry">
+           <rect>
+            <x>21</x>
+            <y>120</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.máx [mm²]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_armacao_simples_as_max">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>120</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="ledit_viga_armacao_simples_as_min">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>150</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_viga_armacao_simples_as_min">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>150</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>As.mín [mm²]</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLineEdit" name="ledit_viga_armacao_simples_dominio_ruptura">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>50</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_viga_armacao_simples_dominio_ruptura">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>111</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Domínio de Ruptura:</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btn_viga_armacao_simples">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>10</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Simplesmente Armada</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_viga_armacao_dupla">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>10</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Duplamente Armada</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="group_viga_solicitacoes">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>251</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Solicitações</string>
+      </property>
+      <widget class="QLineEdit" name="ledit_viga_momento_fletor">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ledit_viga_cortante">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>50</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_viga_momento_fletor">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Momento Fletor [KN.m]</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_viga_cortante">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>49</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cortante [KN]</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="group_viga_materiais">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>251</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Concreto</string>
+      </property>
+      <widget class="QLabel" name="label_viga_concreto_fck">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Resistência - fck [MPa]</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="combo_viga_concreto_fck">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>20</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>20</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>25</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>30</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>35</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>40</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>45</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>50</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="combo_viga_aco_classe">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>50</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>250</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>500</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>600</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_viga_aco_classe">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Tipo de Aço - CA</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="group_viga_armacao_transversal">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>40</y>
+        <width>261</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Armadura Transversal</string>
+      </property>
+      <widget class="QGroupBox" name="group_viga_armacao_modelo_calculo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>140</y>
+         <width>271</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Modelo de Cálculo</string>
+       </property>
+       <widget class="QRadioButton" name="radio_viga_modelo_calculo_1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>211</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Modelo I   -   α = 90º e θ = 45º</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radio_viga_modelo_calculo_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>221</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Modelo II   -   α = 90º e  30º &lt; θ &lt; 45º</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spin_viga_angulo_theta">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>60</y>
+          <width>42</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>30</number>
+        </property>
+        <property name="maximum">
+         <number>45</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_viga_angulo_theta">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>60</y>
+          <width>47</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string> θ :</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>221</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>esquema_bielas.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_viga_vsd">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>240</y>
+         <width>47</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vsd [KN]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ledit_viga_vsd">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>240</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_viga_vrd2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>270</y>
+         <width>47</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vrd2 [KN]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ledit_viga_vrd2">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>270</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ledit_viga_vc">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>300</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_viga_vc">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>300</y>
+         <width>47</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vc [KN]</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_viga_vsw">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>330</y>
+         <width>47</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Vsw[KN]</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ledit_viga_vsw">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>330</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="group_viga_area_aco">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>360</y>
+         <width>270</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Área de Aço</string>
+       </property>
+       <widget class="QLineEdit" name="ledit_viga_as_s">
+        <property name="geometry">
+         <rect>
+          <x>122</x>
+          <y>20</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_viga_as_s">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>As/s [mm²/m]</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="ledit_viga_as_min_s">
+        <property name="geometry">
+         <rect>
+          <x>122</x>
+          <y>50</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_viga_as_min_s">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>As.min/s [mm²/m]</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="btn_viga_gerar_detalhamento">
+       <property name="geometry">
+        <rect>
+         <x>127</x>
+         <y>447</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Gerar Detalhamento</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btn_viga_calcular">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>520</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calcular</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_viga_limpar">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>520</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limpar</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>0</y>
+      <width>6</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>navier_logo_mini_alt.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>871</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
