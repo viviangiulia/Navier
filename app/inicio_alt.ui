@@ -63,7 +63,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>navier_logo_mini.png</pixmap>
+         <pixmap>images/navier_logo_mini.png</pixmap>
         </property>
        </widget>
        <widget class="QLabel" name="label">
@@ -397,7 +397,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>navier_logo.png</pixmap>
+         <pixmap>images/navier_logo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>false</bool>
@@ -416,7 +416,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>nassau_logo.png</pixmap>
+         <pixmap>images/nassau_logo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1086,7 +1086,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>navier_logo.png</pixmap>
+         <pixmap>images/navier_logo.png</pixmap>
         </property>
        </widget>
        <widget class="QTextBrowser" name="textBrowser_5">
@@ -1168,7 +1168,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>logo_a3_mini.png</pixmap>
+         <pixmap>images/logo_a3_mini.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1187,7 +1187,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>git_logo.png</pixmap>
+         <pixmap>images/git_logo.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1219,7 +1219,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>logo_brunel.png</pixmap>
+         <pixmap>images/logo_brunel.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1238,7 +1238,7 @@ p, li { white-space: pre-wrap; }
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>logo_engtool.png</pixmap>
+         <pixmap>images/logo_engtool.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>

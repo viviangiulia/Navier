@@ -21,3 +21,9 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+tests.ipynb
+test.py
+
+__pycache__/
+app/__pycache__/
+.vscode/
